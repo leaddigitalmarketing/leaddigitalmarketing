@@ -2,373 +2,392 @@
 <html lang="id">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lead Digital Marketing — Jasa Iklan Facebook & Instagram</title>
-  <meta name="description" content="Lead Digital Marketing — jasa profesional pengelolaan iklan Facebook dan Instagram. Paket branding, interaksi WA, uji coba, dan program Expert Pro Sales 28 hari.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Digital Lead Marketing — Pemesanan Iklan Meta Ads</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    :root{--accent:#6f42c1}
-    .hero{background:linear-gradient(90deg, rgba(111,66,193,0.08), rgba(111,66,193,0.03));}
-    .card-pricing {border:1px solid rgba(0,0,0,0.06)}
-    .badge-accent{background:var(--accent);color:#fff}
-    .feature-check::before{content:"✓";color:var(--accent);margin-right:.5rem}
-    footer{background:#0b1220;color:#ffffff}
+    body { padding-top: 4.5rem; }
+    .service-card { cursor: pointer; transition: transform .12s; }
+    .service-card:hover { transform: translateY(-4px); }
+    .min-note { font-size: .9rem; color: #6c757d; }
   </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Lead Digital Marketing</a>
+    <a class="navbar-brand" href="#">Digital Lead Marketing</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navmenu">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="paketMenu" role="button" data-bs-toggle="dropdown">Paket Profesional</a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="paketMenu">
-            <li><a class="dropdown-item" href="#paket-branding">Branding (Rp310.000)</a></li>
-            <li><a class="dropdown-item" href="#paket-interaksi">Interaksi ke WA (Rp150.000)</a></li>
-            <li><a class="dropdown-item" href="#paket-combo">Branding + Interaksi (Rp500.000)</a></li>
-            <li><a class="dropdown-item" href="#paket-ujicoba">Uji Coba WA (Rp110.000)</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#expert-pro">Expert Pro Sales 28 hari (Rp3.410.000)</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#recommendation">Rekomendasi</a></li>
-        <li class="nav-item"><a class="btn btn-outline-primary ms-2" href="https://wa.me/6289682179915" target="_blank">Hubungi via WhatsApp</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<header class="hero py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <h1 class="display-6 fw-bold">Jasa Iklan Facebook & Instagram Profesional</h1>
-        <p class="lead">Kami membantu brand Anda dikenali, mengumpulkan lead berkualitas, dan meningkatkan penjualan melalui strategi funnel teruji.</p>
-        <p>
-          <a href="#paket" class="btn btn-primary me-2">Lihat Paket</a>
-          <a href="https://wa.me/6289682179915" target="_blank" class="btn btn-outline-secondary">Pesan Sekarang</a>
-        </p>
-        <ul class="list-unstyled small mt-3">
-          <li><span class="badge badge-accent">Cepat</span> Setup dan live lebih cepat</li>
-          <li><span class="badge badge-accent">Terukur</span> Laporan performa harian</li>
-        </ul>
-      </div>
-      <div class="col-lg-6 text-center">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=60" alt="ads" class="img-fluid rounded shadow-sm">
-      </div>
-    </div>
+<header class="bg-light py-5 mb-4">
+  <div class="container text-center">
+    <h1 class="display-6">BROSUR JASA PASANG IKLAN META ADS</h1>
+    <p class="lead">Tingkatkan penjualan Anda dengan iklan yang tepat sasaran — Facebook & Instagram (Meta Ads)</p>
+    <a class="btn btn-primary" href="#services">Lihat Layanan</a>
   </div>
 </header>
 
-<section id="services" class="py-5">
-  <div class="container">
-    <div class="row mb-4">
-      <div class="col text-center">
-        <h2 class="fw-bold">Layanan Kami</h2>
-        <p class="text-muted">Pengelolaan iklan Facebook & Instagram, strategi funnel, copywriting, optimasi, dan laporan.</p>
+<main class="container">
+
+  <!-- Services -->
+  <section id="services" class="mb-5">
+    <h2 class="mb-3">Layanan & Rekomendasi Budget</h2>
+    <div class="row g-3">
+
+      <!-- We'll generate cards for each service -->
+      <!-- 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card" data-service='{"id":1,"name":"Sales Sepeda Motor","minDaily":30000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 300.000 / hari","type":"Pesan (WhatsApp)","desc":"Promo DP, tenor, kredit, unit baru/bekas"}'>
+          <div class="card-body">
+            <h5 class="card-title">🏍️ Sales Sepeda Motor</h5>
+            <p class="card-text small">Jenis: Pesan (WhatsApp) • Minimal: <strong>Rp 30.000</strong>/hari</p>
+            <p class="min-note mb-0">Cocok untuk: Promo DP, tenor, kredit, unit baru/bekas</p>
+            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+          </div>
+        </div>
       </div>
+
+      <!-- 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card" data-service='{"id":2,"name":"Sales Mobil","minDaily":50000,"ideal":"Rp 100.000 – Rp 200.000 / hari","max":"Rp 300.000 – Rp 500.000 / hari","type":"Prospek (Formulir Instan)","desc":"Lead berkualitas, booking test drive"}'>
+          <div class="card-body">
+            <h5 class="card-title">🚗 Sales Mobil</h5>
+            <p class="card-text small">Jenis: Prospek • Minimal: <strong>Rp 50.000</strong>/hari</p>
+            <p class="min-note mb-0">Cocok untuk: Lead berkualitas, booking test drive</p>
+            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card" data-service='{"id":3,"name":"Sales Properti (Rumah/Apartemen)","minDaily":75000,"ideal":"Rp 150.000 – Rp 250.000 / hari","max":"Rp 300.000 – Rp 800.000 / hari","type":"Prospek","desc":"KPR, cluster baru, unit premium"}'>
+          <div class="card-body">
+            <h5 class="card-title">🏡 Sales Properti</h5>
+            <p class="card-text small">Jenis: Prospek • Minimal: <strong>Rp 75.000</strong>/hari</p>
+            <p class="min-note mb-0">Cocok untuk: KPR, cluster baru, unit premium</p>
+            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card" data-service='{"id":4,"name":"Villa / Hotel / Penginapan","minDaily":30000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 300.000 / hari","type":"Pesan / Traffic","desc":"Booking harian, liburan, promo long stay"}'>
+          <div class="card-body">
+            <h5 class="card-title">🏖️ Villa / Hotel / Penginapan</h5>
+            <p class="card-text small">Jenis: Pesan/Traffic • Minimal: <strong>Rp 30.000</strong>/hari</p>
+            <p class="min-note mb-0">Cocok untuk: Booking harian, promo long stay</p>
+            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card" data-service='{"id":5,"name":"Toko Online + Toko Fisik","minDaily":25000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 400.000 / hari","type":"Penjualan / Pesan","desc":"Fashion, snack, perlengkapan rumah, aksesoris"}'>
+          <div class="card-body">
+            <h5 class="card-title">🛒 Toko Online + Toko Fisik</h5>
+            <p class="card-text small">Jenis: Penjualan/Pesan • Minimal: <strong>Rp 25.000</strong>/hari</p>
+            <p class="min-note mb-0">Cocok untuk: Fashion, snack, perlengkapan rumah</p>
+            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card" data-service='{"id":6,"name":"Jasa Pasang WiFi / Internet Rumah","minDaily":20000,"ideal":"Rp 50.000 – Rp 100.000 / hari","max":"Rp 150.000 – Rp 250.000 / hari","type":"Pesan / Prospek","desc":"Provider internet area tertentu"}'>
+          <div class="card-body">
+            <h5 class="card-title">📶 Jasa Pasang WiFi / Internet</h5>
+            <p class="card-text small">Jenis: Pesan/Prospek • Minimal: <strong>Rp 20.000</strong>/hari</p>
+            <p class="min-note mb-0">Cocok untuk: Provider internet area tertentu</p>
+            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card" data-service='{"id":7,"name":"Klinik Kecantikan / Aesthetic / Salon","minDaily":30000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 300.000 / hari","type":"Pesan / Traffic","desc":"Booking treatment, promo bulanan"}'>
+          <div class="card-body">
+            <h5 class="card-title">💆‍♀️ Klinik Kecantikan / Salon</h5>
+            <p class="card-text small">Jenis: Pesan/Traffic • Minimal: <strong>Rp 30.000</strong>/hari</p>
+            <p class="min-note mb-0">Cocok untuk: Booking treatment, promo bulanan</p>
+            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card" data-service='{"id":8,"name":"Tempat Kursus (Bimbel, Musik, Skill, Online Class)","minDaily":25000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 300.000 / hari","type":"Prospek / Pesan","desc":"Pendaftaran siswa baru"}'>
+          <div class="card-body">
+            <h5 class="card-title">🎓 Tempat Kursus</h5>
+            <p class="card-text small">Jenis: Prospek/Pesan • Minimal: <strong>Rp 25.000</strong>/hari</p>
+            <p class="min-note mb-0">Cocok untuk: Pendaftaran siswa baru</p>
+            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card" data-service='{"id":9,"name":"Tour & Travel – Umroh & Haji","minDaily":50000,"ideal":"Rp 100.000 – Rp 200.000 / hari","max":"Rp 300.000 – Rp 600.000 / hari","type":"Pesan / Prospek","desc":"Pendaftaran paket Umroh reguler & VIP, Haji Plus/Furoda"}'>
+          <div class="card-body">
+            <h5 class="card-title">🕋 Tour & Travel – Umroh & Haji</h5>
+            <p class="card-text small">Jenis: Pesan/Prospek • Minimal: <strong>Rp 50.000</strong>/hari</p>
+            <p class="min-note mb-0">Cocok untuk: Pendaftaran paket Umroh & Haji, promo early bird</p>
+            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </section>
 
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Strategi & Riset</h5>
-            <p class="card-text">Riset audiens, riset market, dan blueprint funnel khusus untuk produk Anda.</p>
-            <ul class="ps-3 small text-muted">
-              <li>Riset kompetitor</li>
-              <li>Segmentasi audiens</li>
-              <li>Blueprint funnel</li>
-            </ul>
-          </div>
+  <!-- About -->
+  <section id="about" class="mb-5">
+    <h3>Tentang Layanan</h3>
+    <p>Kami menyediakan setting iklan profesional, riset audiens, copywriting & materi iklan, optimasi harian, laporan hasil iklan, serta garansi iklan berjalan. Pilih layanan di atas lalu pesan untuk memulai kampanye Anda.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="mb-5">
+    <h3>Kontak</h3>
+    <p>Langsung kirim pesan ke WhatsApp: <a href="https://wa.me/6289682179915" target="_blank">+62 896-8217-9915</a></p>
+  </section>
+
+</main>
+
+<!-- ORDER MODAL -->
+<div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <form id="orderForm" class="needs-validation" novalidate>
+        <div class="modal-header">
+          <h5 class="modal-title">Form Pemesanan Iklan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
         </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Creatives & Copywriting</h5>
-            <p class="card-text">Hook, script, hingga visual iklan (video/reels & image) yang dirancang untuk konversi.</p>
-            <ul class="ps-3 small text-muted">
-              <li>Hook tinggi</li>
-              <li>CTA jelas</li>
-              <li>Variasi A/B testing</li>
-            </ul>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Nama Layanan Produk</label>
+            <input type="text" id="serviceName" class="form-control" readonly>
           </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Setup, Optimasi & Report</h5>
-            <p class="card-text">Setup iklan, optimasi harian, dan laporan performa yang mudah dimengerti.</p>
-            <ul class="ps-3 small text-muted">
-              <li>Optimasi ROAS</li>
-              <li>Daily report</li>
-              <li>Retargeting otomatis</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="paket" class="py-5 bg-light">
-  <div class="container">
-    <div class="row mb-4">
-      <div class="col text-center">
-        <h2 class="fw-bold">Paket & Harga</h2>
-        <p class="text-muted">Pilih paket yang sesuai tujuan: Branding, Interaksi WA, Kombinasi, atau Uji Coba.</p>
-      </div>
-    </div>
-
-    <div class="row gy-4">
-      <!-- Branding -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-pricing h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Paket Branding</h5>
-            <p class="mb-2 text-muted">Membangun Brand & Awareness</p>
-            <h3 class="fw-bold">Rp 310.000</h3>
-            <p class="small">Biaya iklan minimal Rp45.000/hari • Durasi: minimal 5 hari • Biaya Set Up Rp85.000</p>
-            <ul class="mt-3 small text-muted">
-              <li class="feature-check">Optimasi audience & konten</li>
-              <li class="feature-check">Laporan singkat</li>
-            </ul>
-            <a href="https://wa.me/6289682179915?text=Saya%20mau%20pesan%20Paket%20Branding" class="btn btn-primary mt-3">Pesan via WA</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Interaksi -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-pricing h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Paket Interaksi → WA</h5>
-            <p class="mb-2 text-muted">Mengarahkan calon pembeli masuk ke WhatsApp</p>
-            <h3 class="fw-bold">Rp 150.000</h3>
-            <p class="small">Biaya iklan minimal Rp20.000/hari • Durasi: minimal 5 hari • Biaya Set Up Rp50.000</p>
-            <ul class="mt-3 small text-muted">
-              <li class="feature-check">Optimasi klik & pesan ke WA</li>
-              <li class="feature-check">Pelaporan calon prospek</li>
-            </ul>
-            <a href="https://wa.me/6289682179915?text=Saya%20mau%20pesan%20Paket%20Interaksi" class="btn btn-primary mt-3">Pesan via WA</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Combo -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-pricing h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Branding + Interaksi</h5>
-            <p class="mb-2 text-muted">Kombinasi: Branding + Mengarahkan ke WA</p>
-            <h3 class="fw-bold">Rp 500.000</h3>
-            <p class="small">Durasi minimal 7 hari • Branding Rp55.000/hari (4 hari) • Interaksi Rp35.000/hari (3 hari) • Set Up Rp175.000</p>
-            <ul class="mt-3 small text-muted">
-              <li class="feature-check">Tahapan funnel terstruktur</li>
-              <li class="feature-check">Retargeting hangat</li>
-            </ul>
-            <a href="https://wa.me/6289682179915?text=Saya%20mau%20pesan%20Paket%20Combo" class="btn btn-primary mt-3">Pesan via WA</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Uji Coba -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-pricing h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Paket Uji Coba (WA)</h5>
-            <p class="mb-2 text-muted">Cek performa iklan dengan budget kecil</p>
-            <h3 class="fw-bold">Rp 110.000</h3>
-            <p class="small">Biaya iklan minimal Rp20.000/hari • Durasi: minimal 3 hari • Biaya Set Up Rp50.000</p>
-            <ul class="mt-3 small text-muted">
-              <li class="feature-check">Cocok untuk testing produk baru</li>
-              <li class="feature-check">Rekomendasi perbaikan kreatif</li>
-            </ul>
-            <a href="https://wa.me/6289682179915?text=Saya%20mau%20pesan%20Paket%20UjiCoba" class="btn btn-primary mt-3">Pesan via WA</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Expert Pro Sales -->
-      <div class="col-12">
-        <div class="card mt-3 shadow-sm">
-          <div class="card-body">
-            <div class="row align-items-center">
-              <div class="col-md-8">
-                <h4 id="expert-pro" class="fw-bold">Paket Iklan Expert Pro Sales — 28 hari</h4>
-                <p class="mb-1">Program 28 hari dengan strategi funnel 5 fase (Awareness → Consideration → Conversion → Retargeting → Scaling).</p>
-                <p class="mb-1"><strong>Total biaya iklan:</strong> Rp2.595.000 • <strong>Jasa Set Up & Optimasi:</strong> Rp815.000</p>
-                <h5 class="text-danger fw-bold">Total Investasi: Rp3.410.000</h5>
-              </div>
-              <div class="col-md-4 text-md-end">
-                <a href="https://wa.me/6289682179915?text=Mau%20info%20Expert%20Pro%20Sales" class="btn btn-lg btn-outline-primary">Tanya Expert Pro</a>
-              </div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Biaya Iklan harian (Rp)</label>
+              <input type="number" id="dailyCost" class="form-control" min="0" step="1000" required>
+              <div class="form-text" id="dailyMinNote"></div>
+              <div class="invalid-feedback">Masukkan biaya iklan harian sesuai minimal yang direkomendasikan.</div>
             </div>
 
-            <hr>
-            <div class="row gy-2">
-              <div class="col-md-4">
-                <div class="p-2">
-                  <h6 class="fw-bold">Hari 1–3: Awareness</h6>
-                  <p class="small">Budget Rp35.000/hari • Output: Brand dikenal, audiens hangat, optimasi konten.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="p-2">
-                  <h6 class="fw-bold">Hari 4–7: Consideration</h6>
-                  <p class="small">Budget Rp65.000/hari • Output: Pengunjung WA, prospek, data minat.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="p-2">
-                  <h6 class="fw-bold">Hari 8–10: Conversion</h6>
-                  <p class="small">Budget Rp115.000/hari • Output: Retargeting, keputusan pembelian meningkat.</p>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="p-2">
-                  <h6 class="fw-bold">Hari 11–15: Retargeting</h6>
-                  <p class="small">Budget Rp35.000/hari • Output: Menutup penjualan yang tertunda.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="p-2">
-                  <h6 class="fw-bold">Hari 16–20: Scaling (Fase 1)</h6>
-                  <p class="small">Budget Rp115.000/hari • Output: Perbesar jangkauan pembeli baru.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="p-2">
-                  <h6 class="fw-bold">Hari 21–25: Scaling (Fase 2)</h6>
-                  <p class="small">Budget Rp135.000/hari • Output: Duplikasi iklan terbaik.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="p-2">
-                  <h6 class="fw-bold">Hari 26–28: Scaling (Fase 3)</h6>
-                  <p class="small">Budget Rp175.000/hari • Output: Omset meningkat signifikan.</p>
-                </div>
-              </div>
-
+            <div class="col-md-6">
+              <label class="form-label">Durasi Iklan Tayang (hari)</label>
+              <input type="number" id="durationDays" class="form-control" min="3" step="1" value="3" required>
+              <div class="form-text" id="durationNote">Durasi minimal 3 hari.</div>
+              <div class="invalid-feedback">Durasi minimal 3 hari.</div>
             </div>
 
+            <div class="col-md-6">
+              <label class="form-label">Biaya Jasa Set Up (Rp)</label>
+              <input type="text" id="setupFee" class="form-control" readonly>
+              <div class="form-text">Base Rp 50.000 untuk 3 hari. Tambahan Rp 15.000/hari setelah 3 hari.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Total Biaya Iklan (Rp)</label>
+              <input type="text" id="totalAdCost" class="form-control" readonly>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Total Biaya Keseluruhan (Rp)</label>
+              <input type="text" id="totalOverall" class="form-control fw-bold" readonly>
+            </div>
           </div>
+
+          <hr>
+          <div>
+            <label class="form-label">Catatan / Pesan untuk kami (opsional)</label>
+            <textarea id="orderNote" class="form-control" rows="3" placeholder="Contoh: target area, jam tayang, atau info paket"></textarea>
+          </div>
+
         </div>
-      </div>
 
-    </div>
-  </div>
-</section>
-
-<section id="recommendation" class="py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <h3 class="fw-bold">Rekomendasi Strategi Funnel 3 Fase</h3>
-        <p class="text-muted">Untuk hasil maksimal, jalankan funnel 3 fase selama 10 hari seperti contoh berikut.</p>
-        <div class="table-responsive">
-          <table class="table table-bordered align-middle">
-            <thead class="table-light">
-              <tr>
-                <th>Fase</th>
-                <th>Durasi</th>
-                <th>Budget/hari</th>
-                <th>Output</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Awareness</td>
-                <td>Hari 1–3</td>
-                <td>Rp35.000</td>
-                <td>Brand dikenal, audiens hangat, optimasi konten</td>
-              </tr>
-              <tr>
-                <td>Consideration</td>
-                <td>Hari 4–7</td>
-                <td>Rp65.000</td>
-                <td>Pengunjung WA, prospek jelas, data minat</td>
-              </tr>
-              <tr>
-                <td>Conversion</td>
-                <td>Hari 8–10</td>
-                <td>Rp115.000</td>
-                <td>Retargeting hangat, peningkatan keputusan pembelian</td>
-              </tr>
-              <tr>
-                <td class="text-end" colspan="2"><strong>Total biaya iklan 10 hari</strong></td>
-                <td colspan="2"><strong>Rp645.000</strong></td>
-              </tr>
-              <tr>
-                <td class="text-end" colspan="2">Jasa setup & optimasi</td>
-                <td colspan="2">Rp355.000</td>
-              </tr>
-              <tr>
-                <td class="text-end" colspan="2"><strong>Total</strong></td>
-                <td colspan="2"><strong>Rp1.000.000</strong></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="modal-footer">
+          <div class="me-auto text-start">
+            <small class="text-muted">Nomor WhatsApp penerima: +62 896-8217-9915</small>
+          </div>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+          <button type="submit" id="sendWaBtn" class="btn btn-success">Kirim ke WhatsApp</button>
         </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="p-3 border rounded-3 shadow-sm">
-          <h5 class="fw-bold">Kenapa pilih kami?</h5>
-          <ul class="small text-muted">
-            <li>Fokus pada ROI & ROAS</li>
-            <li>Funnel teruji untuk mengurangi biaya iklan</li>
-            <li>Laporan mudah dimengerti</li>
-          </ul>
-          <a href="https://wa.me/6289682179915" target="_blank" class="btn btn-primary w-100 mt-3">Konsultasi Gratis</a>
-        </div>
-      </div>
+      </form>
     </div>
   </div>
-</section>
+</div>
 
-<section id="contact" class="py-5 bg-secondary bg-opacity-10">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-8">
-        <h4 class="fw-bold">Siap mulai iklan yang efektif?</h4>
-        <p class="text-muted">Hubungi kami untuk konsultasi & pemasangan iklan. Proses cepat — setup, iklan tayang, dan laporan.</p>
-        <p><a class="btn btn-success" href="https://wa.me/6289682179915" target="_blank">Chat WhatsApp: +62 896-8217-9915</a></p>
-      </div>
-      <div class="col-md-4 text-md-end">
-        <small class="text-muted">Jam kerja: Senin–Sabtu, 09:00–18:00</small>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="py-4">
-  <div class="container d-flex justify-content-between align-items-center">
-    <div>
-      <strong>Lead Digital Marketing</strong><br>
-      <small class="text-muted">Jasa Iklan Facebook & Instagram</small>
-    </div>
-    <div class="text-end small text-muted">
-      <div>WhatsApp: <a href="https://wa.me/6289682179915" class="link-light">+62 896-8217-9915</a></div>
-      <div class="mt-1">© <span id="y"></span> Lead Digital Marketing</div>
-    </div>
-  </div>
-</footer>
-
+<!-- Bootstrap JS and dependencies -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 <script>
-  document.getElementById('y').innerText = new Date().getFullYear();
+(function(){
+  // Utilities
+  const phoneNumber = '6289682179915'; // tanpa tanda +
+  function toIDR(n){
+    if (isNaN(n)) return '-';
+    return 'Rp ' + Number(n).toLocaleString('id-ID');
+  }
+
+  // Elements
+  const orderModalEl = document.getElementById('orderModal');
+  const orderModal = new bootstrap.Modal(orderModalEl);
+  const serviceNameInput = document.getElementById('serviceName');
+  const dailyCostInput = document.getElementById('dailyCost');
+  const dailyMinNote = document.getElementById('dailyMinNote');
+  const durationInput = document.getElementById('durationDays');
+  const durationNote = document.getElementById('durationNote');
+  const setupFeeInput = document.getElementById('setupFee');
+  const totalAdCostInput = document.getElementById('totalAdCost');
+  const totalOverallInput = document.getElementById('totalOverall');
+  const orderForm = document.getElementById('orderForm');
+  const orderNote = document.getElementById('orderNote');
+
+  // When clicking any "Pesan Sekarang"
+  document.querySelectorAll('.open-order').forEach(btn=>{
+    btn.addEventListener('click', function(e){
+      const card = e.target.closest('.card');
+      if (!card) return;
+      const svc = JSON.parse(card.getAttribute('data-service'));
+      openOrderForService(svc);
+    });
+  });
+
+  // Open modal and populate
+  function openOrderForService(svc){
+    serviceNameInput.value = svc.name;
+    dailyCostInput.min = svc.minDaily;
+    dailyCostInput.value = svc.minDaily; // default fill with minimal
+    dailyMinNote.textContent = 'Minimal: ' + toIDR(svc.minDaily) + ' / hari. Rekomendasi: ' + svc.ideal;
+    durationInput.value = 3;
+    durationNote.textContent = 'Durasi minimal 3 hari.';
+    calculateAll();
+    orderModal.show();
+  }
+
+  // Calculation rules:
+  // Setup fee base 50.000 for up to 3 days. For each day beyond 3 add 15.000/day.
+  function calculateSetupFee(duration){
+    const base = 50000;
+    const extraPerDay = 15000;
+    if (duration <= 3) return base;
+    const extraDays = duration - 3;
+    return base + (extraPerDay * extraDays);
+  }
+
+  function calculateAll(){
+    const daily = Number(dailyCostInput.value) || 0;
+    const minDaily = Number(dailyCostInput.min) || 0;
+    const duration = Math.max(3, Number(durationInput.value) || 3);
+
+    // Validation: enforce minimal daily
+    if (daily < minDaily){
+      dailyCostInput.classList.add('is-invalid');
+    } else {
+      dailyCostInput.classList.remove('is-invalid');
+    }
+
+    // Duration note if equals min
+    if (duration === 3){
+      durationNote.textContent = 'Durasi minimal 3 hari (tidak ada biaya tambahan untuk setup).';
+    } else {
+      durationNote.textContent = 'Durasi ' + duration + ' hari (' + (duration - 3) + ' hari tambahan -> biaya setup lebih tinggi).';
+    }
+
+    const totalAd = daily * duration;
+    const setupFee = calculateSetupFee(duration);
+    const totalOverall = totalAd + setupFee;
+
+    setupFeeInput.value = toIDR(setupFee);
+    totalAdCostInput.value = toIDR(totalAd);
+    totalOverallInput.value = toIDR(totalOverall);
+  }
+
+  // Events to recalc
+  dailyCostInput.addEventListener('input', calculateAll);
+  durationInput.addEventListener('input', function(){
+    // enforce min 3
+    if (Number(durationInput.value) < 3) durationInput.value = 3;
+    calculateAll();
+  });
+
+  // Form submit -> open WhatsApp with message
+  orderForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    // basic validation
+    const daily = Number(dailyCostInput.value) || 0;
+    const minDaily = Number(dailyCostInput.min) || 0;
+    const duration = Math.max(3, Number(durationInput.value) || 3);
+
+    if (daily < minDaily){
+      dailyCostInput.classList.add('is-invalid');
+      dailyCostInput.focus();
+      return;
+    }
+
+    // compute final numbers (be careful with arithmetic)
+    const totalAd = daily * duration; // digit-by-digit safe with JS numbers (integers)
+    const setupFee = calculateSetupFee(duration);
+    const totalOverall = totalAd + setupFee;
+
+    // Build message (Indonesian)
+    const lines = [];
+    lines.push('Pemesanan Iklan - Digital Lead Marketing');
+    lines.push('Layanan: ' + serviceNameInput.value);
+    lines.push('Biaya Iklan harian: ' + toIDR(daily) + ' / hari');
+    lines.push('Durasi tayang: ' + duration + ' hari');
+    lines.push('Total Biaya Iklan: ' + toIDR(totalAd));
+    lines.push('Biaya Jasa Set Up: ' + toIDR(setupFee));
+    lines.push('Total Biaya Keseluruhan: ' + toIDR(totalOverall));
+    if (orderNote.value.trim()){
+      lines.push('Catatan: ' + orderNote.value.trim());
+    }
+    lines.push('');
+    lines.push('Mohon konfirmasi jadwal dan metode pembayaran. Terima kasih.');
+
+    const text = encodeURIComponent(lines.join('\\n'));
+    const waUrl = 'https://wa.me/' + phoneNumber + '?text=' + text;
+
+    // Open WA in new tab
+    window.open(waUrl, '_blank');
+
+    // Optionally close modal
+    orderModal.hide();
+  });
+
+  // Accessibility: allow clicking card anywhere
+  document.querySelectorAll('.service-card').forEach(card=>{
+    card.addEventListener('click', function(e){
+      // avoid double-trigger from button - only trigger if not clicking the button
+      if (e.target.classList.contains('open-order')) return;
+      const svc = JSON.parse(card.getAttribute('data-service'));
+      openOrderForService(svc);
+    });
+  });
+
+})();
 </script>
+
 </body>
 </html>
