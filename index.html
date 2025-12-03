@@ -1,15 +1,19 @@
 <!doctype html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Digital Lead Marketing — Pemesanan Iklan Meta Ads</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body { padding-top: 4.5rem; }
-    .service-card { cursor: pointer; transition: transform .12s; }
-    .service-card:hover { transform: translateY(-4px); }
-    .min-note { font-size: .9rem; color: #6c757d; }
+    body { padding-top: 70px; }
+    .service-img { height:180px; object-fit:cover; width:100%; border-bottom:1px solid #e9ecef; }
+    .card-service { cursor:pointer; transition:transform .12s; }
+    .card-service:hover{ transform: translateY(-4px); }
+    .budget-line { font-size:.95rem; }
+    .min-note { font-size:.9rem; color:#6c757d; }
+    .nav-service { white-space:nowrap; overflow:auto; }
+    .placeholder-img { background:#f6f7f9; display:flex; align-items:center; justify-content:center; color:#adb5bd; height:180px; }
   </style>
 </head>
 <body>
@@ -32,7 +36,7 @@
 
 <header class="bg-light py-5 mb-4">
   <div class="container text-center">
-    <h1 class="display-6">SPESIALIST JASA PASANG IKLAN META ADS FACEBOOK & INSTAGRAM BERSPONSOR</h1>
+    <h1 class="display-6">BROSUR JASA PASANG IKLAN META ADS</h1>
     <p class="lead">Tingkatkan penjualan Anda dengan iklan yang tepat sasaran — Facebook & Instagram (Meta Ads)</p>
     <a class="btn btn-primary" href="#services">Lihat Layanan</a>
   </div>
@@ -40,133 +44,201 @@
 
 <main class="container">
 
-  <!-- Services -->
   <section id="services" class="mb-5">
-    <h2 class="mb-3">Layanan & Rekomendasi Budget</h2>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="h4 mb-0">REKOMENDASI IKLAN & BUDGET SESUAI PRODUK/JASA</h2>
+    </div>
+
     <div class="row g-3">
 
-      <!-- We'll generate cards for each service -->
-      <!-- 1 -->
+      <!-- Service template: image, title, desc, budget, button -->
+      <!-- 1 Sales Sepeda Motor -->
       <div class="col-md-6 col-lg-4">
-        <div class="card service-card" data-service='{"id":1,"name":"Sales Sepeda Motor","minDaily":30000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 300.000 / hari","type":"Pesan (WhatsApp)","desc":"Promo DP, tenor, kredit, unit baru/bekas"}'>
-          <div class="card-body">
+        <div class="card card-service h-100" data-service='{"id":1,"name":"Sales Sepeda Motor","minDaily":30000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 300.000 / hari","type":"Pesan (WhatsApp)","desc":"Promo DP, tenor kredit, unit baru/bekas","img":"https://via.placeholder.com/800x450?text=Sepeda+Motor"}'>
+          <img src="https://via.placeholder.com/800x450?text=Sepeda+Motor" class="service-img" alt="Sales Sepeda Motor">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">🏍️ Sales Sepeda Motor</h5>
-            <p class="card-text small">Jenis: Pesan (WhatsApp) • Minimal: <strong>Rp 30.000</strong>/hari</p>
-            <p class="min-note mb-0">Cocok untuk: Promo DP, tenor, kredit, unit baru/bekas</p>
-            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+            <p class="card-text mb-1"><strong>Jenis:</strong> Pesan (WhatsApp)</p>
+            <p class="min-note mb-2">Cocok untuk: Promo DP, tenor kredit, unit baru/bekas</p>
+            <div class="mt-auto">
+              <p class="budget-line mb-2"><small><strong>Budget:</strong> Minimal: Rp 30.000 – Rp 50.000 / hari • Ideal: Rp 75.000 – Rp 150.000 / hari • Maksimal: Rp 200.000 – Rp 300.000 / hari</small></p>
+              <div class="text-end"><button class="btn btn-sm btn-primary btn-order">Pesan Layanan Ini</button></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- 2 -->
+      <!-- 2 Sales Mobil -->
       <div class="col-md-6 col-lg-4">
-        <div class="card service-card" data-service='{"id":2,"name":"Sales Mobil","minDaily":50000,"ideal":"Rp 100.000 – Rp 200.000 / hari","max":"Rp 300.000 – Rp 500.000 / hari","type":"Prospek (Formulir Instan)","desc":"Lead berkualitas, booking test drive"}'>
-          <div class="card-body">
+        <div class="card card-service h-100" data-service='{"id":2,"name":"Sales Mobil","minDaily":50000,"ideal":"Rp 100.000 – Rp 200.000 / hari","max":"Rp 300.000 – Rp 500.000 / hari","type":"Prospek (Formulir Instan)","desc":"Lead berkualitas, booking test drive","img":"https://via.placeholder.com/800x450?text=Sales+Mobil"}'>
+          <img src="https://via.placeholder.com/800x450?text=Sales+Mobil" class="service-img" alt="Sales Mobil">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">🚗 Sales Mobil</h5>
-            <p class="card-text small">Jenis: Prospek • Minimal: <strong>Rp 50.000</strong>/hari</p>
-            <p class="min-note mb-0">Cocok untuk: Lead berkualitas, booking test drive</p>
-            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+            <p class="card-text mb-1"><strong>Jenis:</strong> Prospek (Formulir Instan)</p>
+            <p class="min-note mb-2">Cocok untuk: Lead berkualitas, booking test drive</p>
+            <div class="mt-auto">
+              <p class="budget-line mb-2"><small><strong>Budget:</strong> Minimal: Rp 50.000 – Rp 75.000 / hari • Ideal: Rp 100.000 – Rp 200.000 / hari • Maksimal: Rp 300.000 – Rp 500.000 / hari</small></p>
+              <div class="text-end"><button class="btn btn-sm btn-primary btn-order">Pesan Layanan Ini</button></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- 3 -->
+      <!-- 3 Sales Properti -->
       <div class="col-md-6 col-lg-4">
-        <div class="card service-card" data-service='{"id":3,"name":"Sales Properti (Rumah/Apartemen)","minDaily":75000,"ideal":"Rp 150.000 – Rp 250.000 / hari","max":"Rp 300.000 – Rp 800.000 / hari","type":"Prospek","desc":"KPR, cluster baru, unit premium"}'>
-          <div class="card-body">
+        <div class="card card-service h-100" data-service='{"id":3,"name":"Sales Properti (Rumah/Apartemen)","minDaily":75000,"ideal":"Rp 150.000 – Rp 250.000 / hari","max":"Rp 300.000 – Rp 800.000 / hari","type":"Prospek","desc":"KPR, cluster baru, unit premium","img":"https://via.placeholder.com/800x450?text=Properti"}'>
+          <img src="https://via.placeholder.com/800x450?text=Properti" class="service-img" alt="Sales Properti">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">🏡 Sales Properti</h5>
-            <p class="card-text small">Jenis: Prospek • Minimal: <strong>Rp 75.000</strong>/hari</p>
-            <p class="min-note mb-0">Cocok untuk: KPR, cluster baru, unit premium</p>
-            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+            <p class="card-text mb-1"><strong>Jenis:</strong> Prospek</p>
+            <p class="min-note mb-2">Cocok untuk: KPR, cluster baru, unit premium</p>
+            <div class="mt-auto">
+              <p class="budget-line mb-2"><small><strong>Budget:</strong> Minimal: Rp 75.000 – Rp 100.000 / hari • Ideal: Rp 150.000 – Rp 250.000 / hari • Maksimal: Rp 300.000 – Rp 800.000 / hari</small></p>
+              <div class="text-end"><button class="btn btn-sm btn-primary btn-order">Pesan Layanan Ini</button></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- 4 -->
+      <!-- 4 Villa/Hotel -->
       <div class="col-md-6 col-lg-4">
-        <div class="card service-card" data-service='{"id":4,"name":"Villa / Hotel / Penginapan","minDaily":30000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 300.000 / hari","type":"Pesan / Traffic","desc":"Booking harian, liburan, promo long stay"}'>
-          <div class="card-body">
+        <div class="card card-service h-100" data-service='{"id":4,"name":"Villa / Hotel / Penginapan","minDaily":30000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 300.000 / hari","type":"Pesan / Traffic","desc":"Booking harian, liburan, promo long stay","img":"https://via.placeholder.com/800x450?text=Villa+Hotel"}'>
+          <img src="https://via.placeholder.com/800x450?text=Villa+Hotel" class="service-img" alt="Villa Hotel">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">🏖️ Villa / Hotel / Penginapan</h5>
-            <p class="card-text small">Jenis: Pesan/Traffic • Minimal: <strong>Rp 30.000</strong>/hari</p>
-            <p class="min-note mb-0">Cocok untuk: Booking harian, promo long stay</p>
-            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+            <p class="card-text mb-1"><strong>Jenis:</strong> Pesan / Traffic</p>
+            <p class="min-note mb-2">Cocok untuk: Booking harian, liburan, promo long stay</p>
+            <div class="mt-auto">
+              <p class="budget-line mb-2"><small><strong>Budget:</strong> Minimal: Rp 30.000 – Rp 50.000 / hari • Ideal: Rp 75.000 – Rp 150.000 / hari • Maksimal: Rp 200.000 – Rp 300.000 / hari</small></p>
+              <div class="text-end"><button class="btn btn-sm btn-primary btn-order">Pesan Layanan Ini</button></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- 5 -->
+      <!-- 5 Toko Online -->
       <div class="col-md-6 col-lg-4">
-        <div class="card service-card" data-service='{"id":5,"name":"Toko Online + Toko Fisik","minDaily":25000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 400.000 / hari","type":"Penjualan / Pesan","desc":"Fashion, snack, perlengkapan rumah, aksesoris"}'>
-          <div class="card-body">
+        <div class="card card-service h-100" data-service='{"id":5,"name":"Toko Online + Toko Fisik","minDaily":25000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 400.000 / hari","type":"Penjualan / Pesan","desc":"Fashion, snack, perlengkapan rumah, aksesoris","img":"https://via.placeholder.com/800x450?text=Toko+Online"}'>
+          <img src="https://via.placeholder.com/800x450?text=Toko+Online" class="service-img" alt="Toko Online">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">🛒 Toko Online + Toko Fisik</h5>
-            <p class="card-text small">Jenis: Penjualan/Pesan • Minimal: <strong>Rp 25.000</strong>/hari</p>
-            <p class="min-note mb-0">Cocok untuk: Fashion, snack, perlengkapan rumah dan lainya memiliki toko online/offline</p>
-            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+            <p class="card-text mb-1"><strong>Jenis:</strong> Penjualan / Pesan</p>
+            <p class="min-note mb-2">Cocok untuk: Fashion, snack, perlengkapan rumah, aksesoris</p>
+            <div class="mt-auto">
+              <p class="budget-line mb-2"><small><strong>Budget:</strong> Minimal: Rp 25.000 – Rp 50.000 / hari • Ideal: Rp 75.000 – Rp 150.000 / hari • Maksimal: Rp 200.000 – Rp 400.000 / hari</small></p>
+              <div class="text-end"><button class="btn btn-sm btn-primary btn-order">Pesan Layanan Ini</button></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- 6 -->
+      <!-- 6 Jasa Pasang WiFi -->
       <div class="col-md-6 col-lg-4">
-        <div class="card service-card" data-service='{"id":6,"name":"Jasa Pasang WiFi / Internet Rumah","minDaily":20000,"ideal":"Rp 50.000 – Rp 100.000 / hari","max":"Rp 150.000 – Rp 250.000 / hari","type":"Pesan / Prospek","desc":"Provider internet area tertentu"}'>
-          <div class="card-body">
+        <div class="card card-service h-100" data-service='{"id":6,"name":"Jasa Pasang WiFi / Internet Rumah","minDaily":20000,"ideal":"Rp 50.000 – Rp 100.000 / hari","max":"Rp 150.000 – Rp 250.000 / hari","type":"Pesan / Prospek","desc":"Provider internet area tertentu","img":"https://via.placeholder.com/800x450?text=Pasang+WiFi"}'>
+          <img src="https://via.placeholder.com/800x450?text=Pasang+WiFi" class="service-img" alt="WiFi">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">📶 Jasa Pasang WiFi / Internet</h5>
-            <p class="card-text small">Jenis: Pesan/Prospek • Minimal: <strong>Rp 20.000</strong>/hari</p>
-            <p class="min-note mb-0">Cocok untuk: Provider internet area tertentu</p>
-            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+            <p class="card-text mb-1"><strong>Jenis:</strong> Pesan / Prospek</p>
+            <p class="min-note mb-2">Cocok untuk: Provider internet area tertentu</p>
+            <div class="mt-auto">
+              <p class="budget-line mb-2"><small><strong>Budget:</strong> Minimal: Rp 20.000 – Rp 40.000 / hari • Ideal: Rp 50.000 – Rp 100.000 / hari • Maksimal: Rp 150.000 – Rp 250.000 / hari</small></p>
+              <div class="text-end"><button class="btn btn-sm btn-primary btn-order">Pesan Layanan Ini</button></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- 7 -->
+      <!-- 7 Klinik Kecantikan -->
       <div class="col-md-6 col-lg-4">
-        <div class="card service-card" data-service='{"id":7,"name":"Klinik Kecantikan / Aesthetic / Salon","minDaily":30000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 300.000 / hari","type":"Pesan / Traffic","desc":"Booking treatment, promo bulanan"}'>
-          <div class="card-body">
+        <div class="card card-service h-100" data-service='{"id":7,"name":"Klinik Kecantikan / Aesthetic / Salon","minDaily":30000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 300.000 / hari","type":"Pesan / Traffic","desc":"Booking treatment, promo bulanan","img":"https://via.placeholder.com/800x450?text=Klinik+Kecantikan"}'>
+          <img src="https://via.placeholder.com/800x450?text=Klinik+Kecantikan" class="service-img" alt="Klinik">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">💆‍♀️ Klinik Kecantikan / Salon</h5>
-            <p class="card-text small">Jenis: Pesan/Traffic • Minimal: <strong>Rp 30.000</strong>/hari</p>
-            <p class="min-note mb-0">Cocok untuk: Booking treatment, promo bulanan</p>
-            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+            <p class="card-text mb-1"><strong>Jenis:</strong> Pesan / Traffic</p>
+            <p class="min-note mb-2">Cocok untuk: Booking treatment, promo bulanan</p>
+            <div class="mt-auto">
+              <p class="budget-line mb-2"><small><strong>Budget:</strong> Minimal: Rp 30.000 – Rp 50.000 / hari • Ideal: Rp 75.000 – Rp 150.000 / hari • Maksimal: Rp 200.000 – Rp 300.000 / hari</small></p>
+              <div class="text-end"><button class="btn btn-sm btn-primary btn-order">Pesan Layanan Ini</button></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- 8 -->
+      <!-- 8 Tempat Kursus -->
       <div class="col-md-6 col-lg-4">
-        <div class="card service-card" data-service='{"id":8,"name":"Tempat Kursus (Bimbel, Musik, Skill, Online Class)","minDaily":25000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 300.000 / hari","type":"Prospek / Pesan","desc":"Pendaftaran siswa baru"}'>
-          <div class="card-body">
+        <div class="card card-service h-100" data-service='{"id":8,"name":"Tempat Kursus (Bimbel, Musik, Skill, Online Class)","minDaily":25000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 300.000 / hari","type":"Prospek / Pesan","desc":"Pendaftaran siswa baru","img":"https://via.placeholder.com/800x450?text=Tempat+Kursus"}'>
+          <img src="https://via.placeholder.com/800x450?text=Tempat+Kursus" class="service-img" alt="Kursus">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">🎓 Tempat Kursus</h5>
-            <p class="card-text small">Jenis: Prospek/Pesan • Minimal: <strong>Rp 25.000</strong>/hari</p>
-            <p class="min-note mb-0">Cocok untuk: Pendaftaran siswa baru</p>
-            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+            <p class="card-text mb-1"><strong>Jenis:</strong> Prospek / Pesan</p>
+            <p class="min-note mb-2">Cocok untuk: Pendaftaran siswa baru</p>
+            <div class="mt-auto">
+              <p class="budget-line mb-2"><small><strong>Budget:</strong> Minimal: Rp 25.000 – Rp 50.000 / hari • Ideal: Rp 75.000 – Rp 150.000 / hari • Maksimal: Rp 200.000 – Rp 300.000 / hari</small></p>
+              <div class="text-end"><button class="btn btn-sm btn-primary btn-order">Pesan Layanan Ini</button></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- 9 -->
+      <!-- 9 Umroh & Haji -->
       <div class="col-md-6 col-lg-4">
-        <div class="card service-card" data-service='{"id":9,"name":"Tour & Travel – Umroh & Haji","minDaily":50000,"ideal":"Rp 100.000 – Rp 200.000 / hari","max":"Rp 300.000 – Rp 600.000 / hari","type":"Pesan / Prospek","desc":"Pendaftaran paket Umroh reguler & VIP, Haji Plus/Furoda"}'>
-          <div class="card-body">
+        <div class="card card-service h-100" data-service='{"id":9,"name":"Tour & Travel – Umroh & Haji","minDaily":50000,"ideal":"Rp 100.000 – Rp 200.000 / hari","max":"Rp 300.000 – Rp 600.000 / hari","type":"Pesan / Prospek","desc":"Pendaftaran paket Umroh reguler & VIP, Haji Plus/Furoda","img":"https://via.placeholder.com/800x450?text=Umroh+%26+Haji"}'>
+          <img src="https://via.placeholder.com/800x450?text=Umroh+%26+Haji" class="service-img" alt="Umroh Haji">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">🕋 Tour & Travel – Umroh & Haji</h5>
-            <p class="card-text small">Jenis: Pesan/Prospek • Minimal: <strong>Rp 50.000</strong>/hari</p>
-            <p class="min-note mb-0">Cocok untuk: Pendaftaran paket Umroh & Haji, promo early bird</p>
-            <div class="mt-3 text-end"><button class="btn btn-sm btn-outline-primary open-order">Pesan Sekarang</button></div>
+            <p class="card-text mb-1"><strong>Jenis:</strong> Pesan / Prospek</p>
+            <p class="min-note mb-2">Cocok untuk: Pendaftaran paket Umroh & Haji, promo early bird</p>
+            <div class="mt-auto">
+              <p class="budget-line mb-2"><small><strong>Budget:</strong> Minimal: Rp 50.000 – Rp 75.000 / hari • Ideal: Rp 100.000 – Rp 200.000 / hari • Maksimal: Rp 300.000 – Rp 600.000 / hari</small></p>
+              <div class="text-end"><button class="btn btn-sm btn-primary btn-order">Pesan Layanan Ini</button></div>
+            </div>
           </div>
         </div>
       </div>
 
-    </div>
+      <!-- 10 Service Elektronik -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-service h-100" data-service='{"id":10,"name":"Service Elektronik (AC, Mesin Cuci, TV)","minDaily":25000,"ideal":"Rp 50.000 – Rp 100.000 / hari","max":"Rp 150.000 – Rp 300.000 / hari","type":"Pesan / Prospek / Traffic","desc":"Promo servis berkala, pemasangan & perbaikan AC, sparepart","img":"https://via.placeholder.com/800x450?text=Service+Elektronik"}'>
+          <img src="https://via.placeholder.com/800x450?text=Service+Elektronik" class="service-img" alt="Service Elektronik">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">🔧 Service Elektronik</h5>
+            <p class="card-text mb-1"><strong>Jenis:</strong> Pesan / Prospek / Traffic</p>
+            <p class="min-note mb-2">Cocok untuk: Servis AC, mesin cuci, TV, promo sparepart</p>
+            <div class="mt-auto">
+              <p class="budget-line mb-2"><small><strong>Budget:</strong> Minimal: Rp 25.000 – Rp 40.000 / hari • Ideal: Rp 50.000 – Rp 100.000 / hari • Maksimal: Rp 150.000 – Rp 300.000 / hari</small></p>
+              <div class="text-end"><button class="btn btn-sm btn-primary btn-order">Pesan Layanan Ini</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11 Pariwisata & Penyewaan Kendaraan -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-service h-100" data-service='{"id":11,"name":"Pariwisata & Penyewaan Kendaraan","minDaily":35000,"ideal":"Rp 75.000 – Rp 150.000 / hari","max":"Rp 200.000 – Rp 500.000 / hari","type":"Pesan / Traffic / Penjualan","desc":"Sewa Jeep offroad, sewa mobil wisata, paket trip lokal","img":"https://via.placeholder.com/800x450?text=Pariwisata+%26+Sewa+Kendaraan"}'>
+          <img src="https://via.placeholder.com/800x450?text=Pariwisata+%26+Sewa+Kendaraan" class="service-img" alt="Pariwisata">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">🏝️🚙 Pariwisata & Penyewaan Kendaraan</h5>
+            <p class="card-text mb-1"><strong>Jenis:</strong> Pesan / Traffic / Penjualan</p>
+            <p class="min-note mb-2">Cocok untuk: Paket wisata, sewa Jeep offroad, open trip</p>
+            <div class="mt-auto">
+              <p class="budget-line mb-2"><small><strong>Budget:</strong> Minimal: Rp 35.000 – Rp 50.000 / hari • Ideal: Rp 75.000 – Rp 150.000 / hari • Maksimal: Rp 200.000 – Rp 500.000 / hari</small></p>
+              <div class="text-end"><button class="btn btn-sm btn-primary btn-order">Pesan Layanan Ini</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- row -->
   </section>
 
-  <!-- About -->
   <section id="about" class="mb-5">
     <h3>Tentang Layanan</h3>
-    <p>Kami menyediakan setting iklan profesional, riset audiens, copywriting & materi iklan, optimasi harian, laporan hasil iklan, serta garansi iklan berjalan. Pilih layanan di atas lalu pesan untuk memulai kampanye Anda.</p>
+    <p>Kami menyediakan setting iklan profesional, riset audiens tertarget, copywriting & materi iklan, optimasi harian, laporan hasil iklan, serta garansi iklan berjalan. Pilih layanan di atas lalu pesan untuk memulai kampanye Anda.</p>
   </section>
 
-  <!-- Contact -->
   <section id="contact" class="mb-5">
     <h3>Kontak</h3>
-    <p>Langsung kirim pesan ke WhatsApp: <a href="https://wa.me/6289682179915" target="_blank">+62 896-8217-9915</a></p>
+    <p>Chat & pemesanan via WhatsApp: <a href="https://wa.me/6289682179915" target="_blank">+62 896-8217-9915</a></p>
   </section>
 
 </main>
@@ -181,17 +253,17 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
         </div>
         <div class="modal-body">
-          <div class="mb-3">
-            <label class="form-label">Nama Layanan Produk</label>
-            <input type="text" id="serviceName" class="form-control" readonly>
-          </div>
-
           <div class="row g-3">
+            <div class="col-12">
+              <label class="form-label">Nama Layanan Produk</label>
+              <input type="text" id="serviceName" class="form-control" readonly>
+            </div>
+
             <div class="col-md-6">
               <label class="form-label">Biaya Iklan harian (Rp)</label>
               <input type="number" id="dailyCost" class="form-control" min="0" step="1000" required>
-              <div class="form-text" id="dailyMinNote"></div>
-              <div class="invalid-feedback">Masukkan biaya iklan harian sesuai minimal yang direkomendasikan.</div>
+              <div class="form-text" id="dailyMinNote">Masukkan biaya iklan harian (minimal sesuai rekomendasi).</div>
+              <div class="invalid-feedback">Masukkan biaya iklan harian ≥ rekomendasi minimal.</div>
             </div>
 
             <div class="col-md-6">
@@ -216,14 +288,12 @@
               <label class="form-label">Total Biaya Keseluruhan (Rp)</label>
               <input type="text" id="totalOverall" class="form-control fw-bold" readonly>
             </div>
-          </div>
 
-          <hr>
-          <div>
-            <label class="form-label">Catatan / Pesan untuk kami (opsional)</label>
-            <textarea id="orderNote" class="form-control" rows="3" placeholder="Contoh: target area, jam tayang, atau info paket"></textarea>
+            <div class="col-12">
+              <label class="form-label">Catatan / Pesan (opsional)</label>
+              <textarea id="orderNote" class="form-control" rows="3" placeholder="Contoh: target area, jam tayang, info paket"></textarea>
+            </div>
           </div>
-
         </div>
 
         <div class="modal-footer">
@@ -238,13 +308,16 @@
   </div>
 </div>
 
-<!-- Bootstrap JS and dependencies -->
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
 (function(){
-  // Utilities
-  const phoneNumber = '6289682179915'; // tanpa tanda +
+  'use strict';
+
+  const phoneNumber = '6289682179915'; // target WA
+
+  // Helper formatting to Indonesian Rupiah
   function toIDR(n){
     if (isNaN(n)) return '-';
     return 'Rp ' + Number(n).toLocaleString('id-ID');
@@ -264,21 +337,32 @@
   const orderForm = document.getElementById('orderForm');
   const orderNote = document.getElementById('orderNote');
 
-  // When clicking any "Pesan Sekarang"
-  document.querySelectorAll('.open-order').forEach(btn=>{
+  // Attach click to all order buttons
+  document.querySelectorAll('.btn-order').forEach(btn=>{
     btn.addEventListener('click', function(e){
-      const card = e.target.closest('.card');
+      const card = e.target.closest('.card-service');
       if (!card) return;
       const svc = JSON.parse(card.getAttribute('data-service'));
       openOrderForService(svc);
     });
   });
 
-  // Open modal and populate
+  // Also allow clicking entire card
+  document.querySelectorAll('.card-service').forEach(card=>{
+    card.addEventListener('click', function(e){
+      // If clicked a button, skip to avoid double
+      if (e.target.classList.contains('btn-order')) return;
+      const svc = JSON.parse(card.getAttribute('data-service'));
+      openOrderForService(svc);
+    });
+  });
+
+  // Open modal and pre-fill minimal values
   function openOrderForService(svc){
     serviceNameInput.value = svc.name;
+    // set min and default for daily cost
     dailyCostInput.min = svc.minDaily;
-    dailyCostInput.value = svc.minDaily; // default fill with minimal
+    dailyCostInput.value = svc.minDaily;
     dailyMinNote.textContent = 'Minimal: ' + toIDR(svc.minDaily) + ' / hari. Rekomendasi: ' + svc.ideal;
     durationInput.value = 3;
     durationNote.textContent = 'Durasi minimal 3 hari.';
@@ -286,37 +370,41 @@
     orderModal.show();
   }
 
-  // Calculation rules:
-  // Setup fee base 50.000 for up to 3 days. For each day beyond 3 add 15.000/day.
-  function calculateSetupFee(duration){
+  // Calculation functions
+  function calcSetupFee(duration){
+    // base 50.000 for <=3 days, +15.000 per extra day
     const base = 50000;
     const extraPerDay = 15000;
     if (duration <= 3) return base;
     const extraDays = duration - 3;
+    // calculate using integer arithmetic
     return base + (extraPerDay * extraDays);
   }
 
   function calculateAll(){
-    const daily = Number(dailyCostInput.value) || 0;
-    const minDaily = Number(dailyCostInput.min) || 0;
-    const duration = Math.max(3, Number(durationInput.value) || 3);
+    // parse integers carefully
+    const minDaily = parseInt(dailyCostInput.min || '0', 10);
+    const daily = Math.max(minDaily, parseInt(dailyCostInput.value || '0', 10));
+    let duration = parseInt(durationInput.value || '3', 10);
+    if (isNaN(duration) || duration < 3) duration = 3;
 
-    // Validation: enforce minimal daily
+    // validation UI for daily
     if (daily < minDaily){
       dailyCostInput.classList.add('is-invalid');
     } else {
       dailyCostInput.classList.remove('is-invalid');
     }
 
-    // Duration note if equals min
-    if (duration === 3){
-      durationNote.textContent = 'Durasi minimal 3 hari (tidak ada biaya tambahan untuk setup).';
+    // update duration note
+    if (duration === 3) {
+      durationNote.textContent = 'Durasi minimal 3 hari (tidak ada biaya tambahan setup).';
     } else {
-      durationNote.textContent = 'Durasi ' + duration + ' hari (' + (duration - 3) + ' hari tambahan -> biaya setup lebih tinggi).';
+      durationNote.textContent = 'Durasi ' + duration + ' hari (' + (duration - 3) + ' hari tambahan → biaya setup lebih tinggi).';
     }
 
+    // totals
     const totalAd = daily * duration;
-    const setupFee = calculateSetupFee(duration);
+    const setupFee = calcSetupFee(duration);
     const totalOverall = totalAd + setupFee;
 
     setupFeeInput.value = toIDR(setupFee);
@@ -324,34 +412,44 @@
     totalOverallInput.value = toIDR(totalOverall);
   }
 
-  // Events to recalc
-  dailyCostInput.addEventListener('input', calculateAll);
+  // Input listeners
+  dailyCostInput.addEventListener('input', function(){
+    // ensure value not less than min (but allow user to type; validation handles)
+    calculateAll();
+  });
   durationInput.addEventListener('input', function(){
     // enforce min 3
-    if (Number(durationInput.value) < 3) durationInput.value = 3;
+    let v = parseInt(durationInput.value || '3', 10);
+    if (isNaN(v) || v < 3) v = 3;
+    durationInput.value = v;
     calculateAll();
   });
 
-  // Form submit -> open WhatsApp with message
+  // Form submit -> open WA with formatted message
   orderForm.addEventListener('submit', function(e){
     e.preventDefault();
-    // basic validation
-    const daily = Number(dailyCostInput.value) || 0;
-    const minDaily = Number(dailyCostInput.min) || 0;
-    const duration = Math.max(3, Number(durationInput.value) || 3);
+    // simple validation
+    const minDaily = parseInt(dailyCostInput.min || '0', 10);
+    const daily = parseInt(dailyCostInput.value || '0', 10);
+    const duration = parseInt(durationInput.value || '3', 10);
 
-    if (daily < minDaily){
+    if (isNaN(daily) || daily < minDaily){
       dailyCostInput.classList.add('is-invalid');
       dailyCostInput.focus();
       return;
     }
+    if (isNaN(duration) || duration < 3){
+      durationInput.classList.add('is-invalid');
+      durationInput.focus();
+      return;
+    }
 
-    // compute final numbers (be careful with arithmetic)
-    const totalAd = daily * duration; // digit-by-digit safe with JS numbers (integers)
-    const setupFee = calculateSetupFee(duration);
+    // compute numbers again (integer arithmetic)
+    const totalAd = daily * duration;
+    const setupFee = calcSetupFee(duration);
     const totalOverall = totalAd + setupFee;
 
-    // Build message (Indonesian)
+    // build message (Indonesian)
     const lines = [];
     lines.push('Pemesanan Iklan - Digital Lead Marketing');
     lines.push('Layanan: ' + serviceNameInput.value);
@@ -369,21 +467,18 @@
     const text = encodeURIComponent(lines.join('\\n'));
     const waUrl = 'https://wa.me/' + phoneNumber + '?text=' + text;
 
-    // Open WA in new tab
+    // open WhatsApp in new tab
     window.open(waUrl, '_blank');
 
-    // Optionally close modal
+    // hide modal
     orderModal.hide();
   });
 
-  // Accessibility: allow clicking card anywhere
-  document.querySelectorAll('.service-card').forEach(card=>{
-    card.addEventListener('click', function(e){
-      // avoid double-trigger from button - only trigger if not clicking the button
-      if (e.target.classList.contains('open-order')) return;
-      const svc = JSON.parse(card.getAttribute('data-service'));
-      openOrderForService(svc);
-    });
+  // Accessibility: close modal resets invalid states
+  orderModalEl.addEventListener('hidden.bs.modal', function(){
+    dailyCostInput.classList.remove('is-invalid');
+    durationInput.classList.remove('is-invalid');
+    orderNote.value = '';
   });
 
 })();
